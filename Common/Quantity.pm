@@ -1,0 +1,32 @@
+package Data::OFN::Common::Quantity;
+
+use strict;
+use warnings;
+
+use Mo qw(build is);
+use Mo::utils qw(check_number);
+use Mo::utils::Cefact qw(check_cefact_unit);
+
+our $VERSION = 0.01;
+
+has value => (
+	is => 'ro',
+);
+
+has unit => (
+	is => 'ro',
+);
+
+sub BUILD {
+	my $self = shift;
+
+	# Check value.
+	check_number($self, 'value');
+
+	# Check unit.
+	check_cefact_unit($self, 'value');
+
+	return;
+}
+
+1;

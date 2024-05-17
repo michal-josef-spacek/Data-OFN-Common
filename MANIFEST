@@ -1,5 +1,6 @@
 Changes
 Common.pm
+Common/Quantity.pm
 Common/TimeMoment.pm
 CONCEPT
 inc/Module/Install.pm
@@ -18,6 +19,8 @@ Makefile.PL
 MANIFEST			This list of files
 META.yml
 README
+t/Data-OFN-Common-Quantity/01-use.t
+t/Data-OFN-Common-Quantity/02-version.t
 t/Data-OFN-Common-TimeMoment/01-use.t
 t/Data-OFN-Common-TimeMoment/02-version.t
 t/Data-OFN-Common-TimeMoment/03-new.t
@@ -26,6 +29,8 @@ t/Data-OFN-Common-TimeMoment/05-date_and_time.t
 t/Data-OFN-Common-TimeMoment/06-flag_unspecified.t
 t/Data-OFN-Common/01-use.t
 t/Data-OFN-Common/02-version.t
+xt/Data-OFN-Common-Quantity/01-pod_coverage.t
+xt/Data-OFN-Common-Quantity/02-pod.t
 xt/Data-OFN-Common-TimeMoment/01-pod_coverage.t
 xt/Data-OFN-Common-TimeMoment/02-pod.t
 xt/Data-OFN-Common/01-pod_coverage.t

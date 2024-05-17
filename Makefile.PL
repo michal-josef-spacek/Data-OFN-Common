@@ -21,6 +21,7 @@ recursive_author_tests('xt');
 requires 'Error::Pure' => 0;
 requires 'Mo' => 0;
 requires 'Mo::utils' => 0.05;
+requires 'Mo::utils::Cefact' => 0;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Data-OFN-Common/issues';
 resources 'homepage' => 'https://github.com/michal-josef-spacek/Data-OFN-Common';
 resources 'repository' => 'git://github.com/michal-josef-spacek/Data-OFN-Common';
