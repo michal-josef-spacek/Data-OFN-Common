@@ -24,6 +24,8 @@ README
 t/Data-OFN-Common-Quantity/01-use.t
 t/Data-OFN-Common-Quantity/02-version.t
 t/Data-OFN-Common-Quantity/03-new.t
+t/Data-OFN-Common-Quantity/04-unit.t
+t/Data-OFN-Common-Quantity/05-value.t
 t/Data-OFN-Common-TimeMoment/01-use.t
 t/Data-OFN-Common-TimeMoment/02-version.t
 t/Data-OFN-Common-TimeMoment/03-new.t
