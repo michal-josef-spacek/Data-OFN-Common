@@ -5,7 +5,7 @@ use warnings;
 
 use Error::Pure qw(err);
 use Mo qw(build is);
-use Mo::utils qw(check_bool check_isa);
+use Mo::utils 0.08 qw(check_bool check_isa);
 
 our $VERSION = 0.01;
 

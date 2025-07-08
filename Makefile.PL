@@ -20,7 +20,7 @@ readme_from 'Common.pm';
 recursive_author_tests('xt');
 requires 'Error::Pure' => 0;
 requires 'Mo' => 0;
-requires 'Mo::utils' => 0.05;
+requires 'Mo::utils' => 0.08;
 requires 'Mo::utils::Number' => 0;
 requires 'Mo::utils::Cefact' => 0;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Data-OFN-Common/issues';
