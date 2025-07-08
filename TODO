@@ -4,7 +4,8 @@ TODO
 2. Finish check_cefact_unit().
 3. Tests.
 4. Doc.
-5.
+5. Check for hour == 0 isn't fine. In TimeMoments.
+6.
 
 Applied
 =======
