@@ -3,6 +3,8 @@ Common.pm
 Common/Quantity.pm
 Common/TimeMoment.pm
 CONCEPT
+examples/time_moment_date.pl
+examples/time_moment_date_and_time.pl
 inc/Module/Install.pm
 inc/Module/Install/AuthorRequires.pm
 inc/Module/Install/AuthorTests.pm
