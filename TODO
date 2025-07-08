@@ -5,7 +5,12 @@ TODO
 4. Doc.
 6. Question if the TimeObject object isn't bad. This could be a simple DateTime
    or undef with right serialization.
-7.
+7. Add doc for Common.pm
+   - SYNOPSIS
+   - DESCRIPTION
+   - SEE ALSO section
+   - ...
+8.
 
 Applied
 =======
