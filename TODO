@@ -3,7 +3,9 @@ TODO
 2. Finish check_cefact_unit().
 3. Tests.
 4. Doc.
-6.
+6. Question if the TimeObject object isn't bad. This could be a simple DateTime
+   or undef with right serialization.
+7.
 
 Applied
 =======
