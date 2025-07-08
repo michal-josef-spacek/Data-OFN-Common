@@ -4,8 +4,8 @@ use strict;
 use warnings;
 
 use Mo qw(build is);
-use Mo::utils qw(check_number);
 use Mo::utils::Cefact qw(check_cefact_unit);
+use Mo::utils::Number qw(check_number);
 
 our $VERSION = 0.01;
 

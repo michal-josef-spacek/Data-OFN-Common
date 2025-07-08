@@ -29,6 +29,7 @@ requires:
   Mo: 0
   Mo::utils: 0.05
   Mo::utils::Cefact: 0
+  Mo::utils::Number: 0
   perl: 5.8.0
 resources:
   bugtracker: https://github.com/michal-josef-spacek/Data-OFN-Common/issues

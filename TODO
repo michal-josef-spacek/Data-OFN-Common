@@ -1,6 +1,5 @@
 TODO
 ====
-1. Move check_number() to Mo::utils::Number
 2. Finish check_cefact_unit().
 3. Tests.
 4. Doc.
@@ -11,3 +10,6 @@ Applied
 5. Check for hour == 0 isn't fine. In TimeMoments.
 It's fine
 NONE [20250708] skim
+
+1. Move check_number() to Mo::utils::Number
+OK [20250708] skim
