@@ -1,6 +1,5 @@
 TODO
 ====
-2. Finish check_cefact_unit().
 3. Tests.
 4. Doc.
 6. Question if the TimeObject object isn't bad. This could be a simple DateTime
@@ -20,3 +19,6 @@ NONE [20250708] skim
 
 1. Move check_number() to Mo::utils::Number
 OK [20250708] skim
+
+2. Finish check_cefact_unit().
+OK [20250709] skim

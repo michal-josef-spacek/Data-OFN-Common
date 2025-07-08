@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 use Mo qw(build is);
-use Mo::utils::Cefact qw(check_cefact_unit);
+use Mo::utils::CEFACT qw(check_cefact_unit);
 use Mo::utils::Number qw(check_number);
 
 our $VERSION = 0.01;
@@ -24,7 +24,7 @@ sub BUILD {
 	check_number($self, 'value');
 
 	# Check unit.
-	check_cefact_unit($self, 'value');
+	check_cefact_unit($self, 'unit');
 
 	return;
 }
