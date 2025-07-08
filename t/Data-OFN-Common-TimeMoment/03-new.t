@@ -118,8 +118,8 @@ eval {
 		),
 	);
 };
-is($EVAL_ERROR, "Parameter 'date_and_time' should be a date parameter.\n",
-	"Parameter 'date_and_time' should be a date parameter.");
+is($EVAL_ERROR, "Parameter 'date_and_time' should be a 'date' parameter.\n",
+	"Parameter 'date_and_time' should be a 'date' parameter.");
 clean();
 
 # Test.

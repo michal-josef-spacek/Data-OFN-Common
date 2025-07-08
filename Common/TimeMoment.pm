@@ -45,7 +45,7 @@ sub BUILD {
 		&& $self->date_and_time->minute == 0
 		&& $self->date_and_time->second == 0) {
 
-		err "Parameter 'date_and_time' should be a date parameter.";
+		err "Parameter 'date_and_time' should be a 'date' parameter.";
 	}
 
 	if (defined $self->date && defined $self->date_and_time) {
