@@ -5,7 +5,7 @@ use warnings;
 
 use Mo qw(build is);
 use Mo::utils qw(check_required);
-use Mo::utils::CEFACT qw(check_cefact_unit);
+use Mo::utils::CEFACT 0.02 qw(check_cefact_unit);
 use Mo::utils::Number qw(check_number);
 
 our $VERSION = 0.01;

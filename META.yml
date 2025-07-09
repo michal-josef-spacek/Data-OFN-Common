@@ -29,7 +29,7 @@ requires:
   Error::Pure: 0
   Mo: 0
   Mo::utils: 0.08
-  Mo::utils::CEFACT: 0
+  Mo::utils::CEFACT: 0.02
   Mo::utils::Number: 0
   perl: 5.8.0
 resources:

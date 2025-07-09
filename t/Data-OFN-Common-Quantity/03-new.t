@@ -31,8 +31,8 @@ eval {
 		'value' => 10,
 	);
 };
-is($EVAL_ERROR, "UN/CEFACT unit common code isn't valid.\n",
-	"UN/CEFACT unit common code isn't valid (XXX).");
+is($EVAL_ERROR, "Parameter 'unit' must be a UN/CEFACT unit common code.\n",
+	"Parameter 'unit' must be a UN/CEFACT unit common code. (XXX).");
 clean();
 
 # Test.
