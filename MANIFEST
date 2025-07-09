@@ -3,6 +3,7 @@ Common.pm
 Common/Quantity.pm
 Common/TimeMoment.pm
 CONCEPT
+examples/quantity_kilogram.pl
 examples/time_moment_date.pl
 examples/time_moment_date_and_time.pl
 inc/Module/Install.pm
