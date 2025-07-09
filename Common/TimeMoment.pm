@@ -53,6 +53,9 @@ sub BUILD {
 	}
 
 	# Check flag_unspecified.
+	if (! defined $self->{'flag_unspecified'}) {
+		$self->{'flag_unspecified'} = 0;
+	}
 	check_bool($self, 'flag_unspecified');
 
 	if (defined $self->date && $self->{'flag_unspecified'}) {
@@ -61,7 +64,7 @@ sub BUILD {
 	if (defined $self->date_and_time && $self->{'flag_unspecified'}) {
 		err "Parmaeter 'date_and_time' and 'flag_unspecified' could not be defined together.";
 	}
-	if (defined $self->flag_unspecified && ! $self->flag_unspecified
+	if (! $self->flag_unspecified
 		&& ! defined $self->date
 		&& ! defined $self->date_and_time) {
 
@@ -130,9 +133,9 @@ Default value is undef.
 
 Flag for definition that date isn't defined.
 
-It's optional.
+It's required.
 
-Default value is undef.
+Default value is 0.
 
 =back
 

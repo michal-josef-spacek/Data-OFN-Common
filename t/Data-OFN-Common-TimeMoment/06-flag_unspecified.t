@@ -31,4 +31,4 @@ $obj = Data::OFN::Common::TimeMoment->new(
 		'year' => 2023,
 	),
 );
-is($obj->flag_unspecified, undef, 'Flag unspecified (undef).');
+is($obj->flag_unspecified, 0, 'Flag unspecified (0 - default).');

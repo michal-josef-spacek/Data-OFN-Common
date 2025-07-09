@@ -9,11 +9,7 @@ use Test::More 'tests' => 11;
 use Test::NoWarnings;
 
 # Test.
-my $obj = Data::OFN::Common::TimeMoment->new;
-isa_ok($obj, 'Data::OFN::Common::TimeMoment');
-
-# Test.
-$obj = Data::OFN::Common::TimeMoment->new(
+my $obj = Data::OFN::Common::TimeMoment->new(
 	'date' => DateTime->new(
 		'day' => 26,
 		'month' => 7,
@@ -129,5 +125,13 @@ eval {
 	);
 };
 is($EVAL_ERROR, "Parameter 'flag_unspecified' disabled needs to be with 'date' or 'date_and_time' parameters.\n",
-	"Parameter 'flag_unspecified' disabled needs to be with 'date' or 'date_and_time' parameters.");
+	"Parameter 'flag_unspecified' disabled needs to be with 'date' or 'date_and_time' parameters (explicit flag_unspecified = 0).");
+clean();
+
+# Test.
+eval {
+	Data::OFN::Common::TimeMoment->new;
+};
+is($EVAL_ERROR, "Parameter 'flag_unspecified' disabled needs to be with 'date' or 'date_and_time' parameters.\n",
+	"Parameter 'flag_unspecified' disabled needs to be with 'date' or 'date_and_time' parameters (no parameters).");
 clean();
