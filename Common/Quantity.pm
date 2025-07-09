@@ -10,24 +10,24 @@ use Mo::utils::Number qw(check_number);
 
 our $VERSION = 0.01;
 
-has value => (
+has unit => (
 	is => 'ro',
 );
 
-has unit => (
+has value => (
 	is => 'ro',
 );
 
 sub BUILD {
 	my $self = shift;
 
-	# Check 'value'.
-	check_required($self, 'value');
-	check_number($self, 'value');
-
 	# Check 'unit'.
 	check_required($self, 'unit');
 	check_cefact_unit($self, 'unit');
+
+	# Check 'value'.
+	check_required($self, 'value');
+	check_number($self, 'value');
 
 	return;
 }
