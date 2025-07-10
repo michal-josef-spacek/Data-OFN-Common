@@ -1,13 +1,7 @@
 TODO
 ====
-4. Doc.
 6. Question if the TimeObject object isn't bad. This could be a simple DateTime
    or undef with right serialization.
-7. Add doc for Common.pm
-   - SYNOPSIS
-   - DESCRIPTION
-   - SEE ALSO section
-   - ...
 8. Add other data types from spec.
 9.
 
@@ -24,4 +18,14 @@ OK [20250708] skim
 OK [20250709] skim
 
 3. Tests.
+OK [20250710] skim
+
+7. Add doc for Common.pm
+   - SYNOPSIS
+   - DESCRIPTION
+   - SEE ALSO section
+   - ...
+OK [20250710] skim
+
+4. Doc.
 OK [20250710] skim
