@@ -1,6 +1,5 @@
 TODO
 ====
-3. Tests.
 4. Doc.
 6. Question if the TimeObject object isn't bad. This could be a simple DateTime
    or undef with right serialization.
@@ -23,3 +22,6 @@ OK [20250708] skim
 
 2. Finish check_cefact_unit().
 OK [20250709] skim
+
+3. Tests.
+OK [20250710] skim

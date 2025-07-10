@@ -5,7 +5,7 @@ use Data::OFN::Common::TimeMoment;
 use DateTime;
 use English;
 use Error::Pure::Utils qw(clean);
-use Test::More 'tests' => 11;
+use Test::More 'tests' => 15;
 use Test::NoWarnings;
 
 # Test.
@@ -27,6 +27,32 @@ $obj = Data::OFN::Common::TimeMoment->new(
 		'hour' => 12,
 		'minute' => 13,
 		'second' => 0,
+	),
+);
+isa_ok($obj, 'Data::OFN::Common::TimeMoment');
+
+# Test.
+$obj = Data::OFN::Common::TimeMoment->new(
+	'date_and_time' => DateTime->new(
+		'day' => 26,
+		'month' => 7,
+		'year' => 2023,
+		'hour' => 0,
+		'minute' => 13,
+		'second' => 0,
+	),
+);
+isa_ok($obj, 'Data::OFN::Common::TimeMoment');
+
+# Test.
+$obj = Data::OFN::Common::TimeMoment->new(
+	'date_and_time' => DateTime->new(
+		'day' => 26,
+		'month' => 7,
+		'year' => 2023,
+		'hour' => 0,
+		'minute' => 0,
+		'second' => 1,
 	),
 );
 isa_ok($obj, 'Data::OFN::Common::TimeMoment');
@@ -134,4 +160,37 @@ eval {
 };
 is($EVAL_ERROR, "Parameter 'flag_unspecified' disabled needs to be with 'date' or 'date_and_time' parameters.\n",
 	"Parameter 'flag_unspecified' disabled needs to be with 'date' or 'date_and_time' parameters (no parameters).");
+clean();
+
+# Test.
+eval {
+	Data::OFN::Common::TimeMoment->new(
+		'date' => DateTime->new(
+			'day' => 26,
+			'month' => 7,
+			'year' => 2023,
+		),
+		'flag_unspecified' => 1,
+	);
+};
+is($EVAL_ERROR, "Parmaeter 'date' and 'flag_unspecified' could not be defined together.\n",
+	"Parmaeter 'date' and 'flag_unspecified' could not be defined together.");
+clean();
+
+# Test.
+eval {
+	Data::OFN::Common::TimeMoment->new(
+		'date_and_time' => DateTime->new(
+			'day' => 26,
+			'month' => 7,
+			'year' => 2023,
+			'hour' => 12,
+			'minute' => 13,
+			'second' => 0,
+		),
+		'flag_unspecified' => 1,
+	);
+};
+is($EVAL_ERROR, "Parmaeter 'date_and_time' and 'flag_unspecified' could not be defined together.\n",
+	"Parmaeter 'date_and_time' and 'flag_unspecified' could not be defined together.");
 clean();
