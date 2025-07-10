@@ -59,5 +59,3 @@ BSD 2-Clause License
 0.02
 
 =cut
-
-=cut
