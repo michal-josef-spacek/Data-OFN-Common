@@ -8,7 +8,7 @@ use Mo::utils qw(check_required);
 use Mo::utils::CEFACT 0.02 qw(check_cefact_unit);
 use Mo::utils::Number 0.02 qw(check_number);
 
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 
 has unit => (
 	is => 'ro',
@@ -167,6 +167,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.03
+0.04
 
 =cut
