@@ -1,5 +1,6 @@
 0.03
  - Fix dependency for Mo::utils::Number.
+ - Regen README file.
 
 0.02 2025-07-10T15:21:38+02:00
  - Fix POD of Common.pm.
